@@ -3,6 +3,7 @@
 
 body {
     font-family: $montserrat;
+    background-color: $lightgrey-bg;
 }
 
 .title {
@@ -23,28 +24,35 @@ body {
     padding-bottom: 5rem;
 }
 
+.dark-bg {  
+    background-color: #000;
+}
+.light-bg {
+    background-color: $lightgrey-bg;
+}
+
+
 /****** Header *******/
 
 //navbar
-.navbar {
+.navbar-header {
     padding-top: 0;
     padding-bottom: 0;
-}
-.dark-bg { // for navbar 
-    background-color: #000;
-}
-.nav-item {
-    line-height: 90px;
-    a {
-        color: #fff;
-        font-weight: 700;
-        font-size: 14px;
-        border-bottom: 5px solid #000;
-        &:hover {
-            border-bottom: 5px solid $primary;
+    .nav-item {
+        line-height: 90px;
+        a {
+            color: #fff;
+            font-weight: 700;
+            font-size: 14px;
+            border-bottom: 5px solid #000;
+            transition: 0.25s;
+            &:hover {
+                border-bottom: 5px solid $primary;
+            }
         }
     }
 }
+
 //welcome section
 .header {
     background-image: url("../images/bg_img.png");
@@ -74,3 +82,94 @@ body {
 }
 
 /***** About us *****/
+.p-aboutus {
+    font-size: 14px;
+    color: #242424;
+    font-weight: 500;
+}
+.aboutus {
+    img {
+        cursor: pointer;
+    }
+}
+
+/***** Services *****/
+.services {
+    .title {
+        h3 {
+            color: #fff;
+        }
+    }
+}
+.list-services {
+    div {
+        border-left: 2px solid #464545;
+        &:last-child {
+            border-right: 2px solid #464545;
+        }
+        h4 {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        p {
+            font-size: 12px;
+            color: #7e7e7e;
+        }
+    }
+}
+
+/***** Projects *****/
+.projects {
+    nav {
+        background-color: #ededed;
+        width: 70%;
+        height: 60px;
+        border: 1px solid #aeaeae;
+        justify-content: space-evenly;
+        &:first-child {
+            border-top-left-radius:30px;
+            border-bottom-left-radius:30px;   
+        }
+        &:last-child {
+            border-top-right-radius:30px;
+            border-bottom-right-radius:30px; 
+        }
+        a {
+            //border-left: 1px solid #aeaeae; think about border solution
+            color: #000;
+            font-size: 14px;
+            font-weight: 500;
+            height: 58px;
+            line-height: 45px;
+            border-bottom: 3px solid #ededed;
+            transition: .25s;
+            text-align: center;
+            &:hover {
+                border-bottom: 3px solid $primary;
+            }
+        }
+    }
+    img {
+        position: relative;
+    }
+    .layer {
+        cursor: pointer;
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 15px;
+        width: 255px;
+        height: 165px;
+        background: rgba(0, 0, 0, 0.6);
+        transition: 0.4s;
+        z-index: 1;
+        opacity: 0;
+        &:hover {
+            opacity: 1;
+        }
+        p {
+            font-size: 12px;
+        }
+    }
+}

@@ -58,6 +58,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  background-color: #f7f7f7;
 }
 
 .title {
@@ -80,28 +81,33 @@ body {
   padding-bottom: 5rem;
 }
 
-/****** Header *******/
-.navbar {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-
 .dark-bg {
   background-color: #000;
 }
 
-.nav-item {
+.light-bg {
+  background-color: #f7f7f7;
+}
+
+/****** Header *******/
+.navbar-header {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar-header .nav-item {
   line-height: 90px;
 }
 
-.nav-item a {
+.navbar-header .nav-item a {
   color: #fff;
   font-weight: 700;
   font-size: 14px;
   border-bottom: 5px solid #000;
+  transition: 0.25s;
 }
 
-.nav-item a:hover {
+.navbar-header .nav-item a:hover {
   border-bottom: 5px solid #b88b58;
 }
 
@@ -135,4 +141,98 @@ body {
 }
 
 /***** About us *****/
+.p-aboutus {
+  font-size: 14px;
+  color: #242424;
+  font-weight: 500;
+}
+
+.aboutus img {
+  cursor: pointer;
+}
+
+/***** Services *****/
+.services .title h3 {
+  color: #fff;
+}
+
+.list-services div {
+  border-left: 2px solid #464545;
+}
+
+.list-services div:last-child {
+  border-right: 2px solid #464545;
+}
+
+.list-services div h4 {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.list-services div p {
+  font-size: 12px;
+  color: #7e7e7e;
+}
+
+/***** Projects *****/
+.projects nav {
+  background-color: #ededed;
+  width: 70%;
+  height: 60px;
+  border: 1px solid #aeaeae;
+  -ms-flex-pack: space-evenly;
+      justify-content: space-evenly;
+}
+
+.projects nav:first-child {
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+}
+
+.projects nav:last-child {
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.projects nav a {
+  color: #000;
+  font-size: 14px;
+  font-weight: 500;
+  height: 58px;
+  line-height: 45px;
+  border-bottom: 3px solid #ededed;
+  transition: .25s;
+  text-align: center;
+}
+
+.projects nav a:hover {
+  border-bottom: 3px solid #b88b58;
+}
+
+.projects img {
+  position: relative;
+}
+
+.projects .layer {
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  width: 255px;
+  height: 165px;
+  background: rgba(0, 0, 0, 0.6);
+  transition: 0.4s;
+  z-index: 1;
+  opacity: 0;
+}
+
+.projects .layer:hover {
+  opacity: 1;
+}
+
+.projects .layer p {
+  font-size: 12px;
+}
 /*# sourceMappingURL=style.css.map */
