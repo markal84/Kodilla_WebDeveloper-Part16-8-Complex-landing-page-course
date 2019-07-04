@@ -1,0 +1,138 @@
+/*Fonts */
+.btn-default {
+  width: 210px;
+  height: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  border-radius: 40px;
+  background-color: #b88b58;
+  border: none;
+}
+
+.btn-default:hover {
+  color: #000;
+  background-color: #b88b58;
+}
+
+.btn-rounded {
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  border: none;
+  background-color: #b88b58;
+}
+
+.phone-shadow {
+  box-shadow: 0 3px 8px rgba(0, 0, 1, 0.24);
+}
+
+.phone {
+  position: absolute;
+  left: 108%;
+  top: 181%;
+}
+
+.phone i {
+  font-size: 36px;
+  color: #fff;
+}
+
+.phone i:hover {
+  color: #000;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  background-color: none;
+  border: 2px solid #b88b58;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 7px;
+}
+
+.dot:hover {
+  background-color: #b88b58;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.title {
+  text-transform: uppercase;
+}
+
+.title h3 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.title p {
+  font-size: 14px;
+  font-weight: 700;
+  color: #aeaeae;
+}
+
+.py-6 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+/****** Header *******/
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.dark-bg {
+  background-color: #000;
+}
+
+.nav-item {
+  line-height: 90px;
+}
+
+.nav-item a {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  border-bottom: 5px solid #000;
+}
+
+.nav-item a:hover {
+  border-bottom: 5px solid #b88b58;
+}
+
+.header {
+  background-image: url("../images/bg_img.png");
+  background-position: center;
+  background-size: cover;
+  height: 850px;
+  position: relative;
+}
+
+.welcome h1 {
+  font-size: 72px;
+  font-weight: 700;
+  color: #fff;
+}
+
+.welcome h1 span {
+  color: #b88b58;
+}
+
+.welcome h4 {
+  color: #fff;
+  font-weight: 700;
+}
+
+.pagination-dots {
+  position: absolute;
+  left: 47%;
+  top: 505px;
+}
+
+/***** About us *****/
+/*# sourceMappingURL=style.css.map */

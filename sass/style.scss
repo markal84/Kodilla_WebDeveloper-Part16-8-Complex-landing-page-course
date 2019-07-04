@@ -1,0 +1,76 @@
+@import "variables";
+@import "buttons";
+
+body {
+    font-family: $montserrat;
+}
+
+.title {
+    text-transform: uppercase;
+    h3 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+    p {
+        font-size: 14px;
+        font-weight: 700;
+        color: $title-p;
+    }
+}
+
+.py-6 {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+/****** Header *******/
+
+//navbar
+.navbar {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.dark-bg { // for navbar 
+    background-color: #000;
+}
+.nav-item {
+    line-height: 90px;
+    a {
+        color: #fff;
+        font-weight: 700;
+        font-size: 14px;
+        border-bottom: 5px solid #000;
+        &:hover {
+            border-bottom: 5px solid $primary;
+        }
+    }
+}
+//welcome section
+.header {
+    background-image: url("../images/bg_img.png");
+    background-position: center;
+    background-size: cover;
+    height: 850px;
+    position: relative;
+}
+.welcome {
+    h1 {
+        font-size: 72px;
+        font-weight: 700;
+        color: #fff;
+        span {
+            color: $primary;
+        }
+    }
+    h4 {
+        color: #fff;
+        font-weight: 700;
+    }
+}
+.pagination-dots {
+    position: absolute;
+    left: 47%;
+    top: 505px;
+}
+
+/***** About us *****/
